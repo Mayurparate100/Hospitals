@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Content/jquery-3.3.1.js"></script>
+<script src="~/Content/Hdetail.js"></script>
+<h2>Hospital Index</h2>
+
+<label>Hospital Name</label>
+<input id="txtname" type="text" class="form-control" />
+<label>Mobile No.</label>
+<input id="txtmobile" type="text" class="form-control" />
+<label>Email</label>
+<input id="txtemail" type="text" class="form-control" />
+<label>City</label>
+<input id="txtcity" type="text" class="form-control" />
+<label>Description</label>
+<input id="txtdescription" type="text" class="form-control" />
+<br>
+
+<input id="File1" type="file" />
+<br>
+
+<input id="Button1" type="button" value="Submit" class="btn btn-success" onclick="saveHdetail()" /><br>
+<br>
+<br>
+
+    <div class="row">
+        <div class="col-md-3">
+            <input type="text" id="txtname" placeholder="Search here" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <input id="btnSearch" type="button" value="Search" onclick="saveHdetail()" />
+        </div>
+    </div>
+<br>
+<br>
+    <table id="Tbl_Hdetail" border="1">
+        <thead>
+            <tr>
+                <th>HospitalId</th>
+                <th>Name</th>
+                <th>mobile</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>Description</th>
+                <th>photo</th>
+
+            </tr>
+        <thead>
+        <tbody></tbody>
+    </table>
+   
